@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@mipmap/ic_launcher" android:enabled="true" android:shortcutId="safemode" android:shortcutShortLabel="@string/safemode_shortcut_short_label">
+        <intent android:targetPackage="com.firsttouchgames.dls7" android:action="com.firsttouchgames.dls7.SAFEMODE" android:targetClass="com.firsttouchgames.dls7.MainActivity" />
+    </shortcut>
+</shortcuts>

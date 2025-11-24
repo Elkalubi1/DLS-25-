@@ -1,0 +1,40 @@
+.class public final Ln5/t$a;
+.super Ljava/lang/Object;
+.source "FirebaseSessionsComponent_MainModule_Companion_UuidGeneratorFactory.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ln5/t;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# static fields
+.field public static final a:Ln5/t;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Ln5/t;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Ln5/t$a;->a:Ln5/t;
+
+    .line 7
+    .line 8
+    return-void
+.end method

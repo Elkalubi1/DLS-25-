@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/confirmText" android:padding="60.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Are you sure?" />
+    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <Button android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="Cancel" android:onClick="Cancel" />
+        <Button android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="Yes" android:onClick="Confirm" />
+    </TableRow>
+</TableLayout>

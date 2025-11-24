@@ -1,0 +1,11 @@
+# fichiers temporaires
+*.log
+*.tmp
+.DS_Store
+.idea/
+.vscode/
+.gradle/
+build/
+local.properties
+com.firsttouchgames*.apk
+kali-linux-*.iso

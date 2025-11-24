@@ -1,0 +1,543 @@
+.class public final Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/d0;
+.super LX6/i;
+.source "SourceFile"
+
+# interfaces
+.implements Le7/p;
+
+
+# annotations
+.annotation runtime LX6/e;
+    c = "com.moloco.sdk.xenoss.sdkdevkit.android.adrenderer.internal.vast.VastParserKt$parseStaticResourceTag$$inlined$iterateTag$1"
+    f = "VastParser.kt"
+    l = {}
+    m = "invokeSuspend"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "LX6/i;",
+        "Le7/p<",
+        "Ln7/H;",
+        "LV6/e<",
+        "-",
+        "LQ6/z;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public synthetic a:Ljava/lang/Object;
+
+.field public final synthetic b:Lorg/xmlpull/v1/XmlPullParser;
+
+.field public final synthetic c:Lkotlin/jvm/internal/C;
+
+.field public final synthetic d:Lkotlin/jvm/internal/C;
+
+
+# direct methods
+.method public constructor <init>(Lorg/xmlpull/v1/XmlPullParser;LV6/e;Lkotlin/jvm/internal/C;Lkotlin/jvm/internal/C;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/d0;->b:Lorg/xmlpull/v1/XmlPullParser;
+
+    .line 2
+    .line 3
+    iput-object p3, p0, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/d0;->c:Lkotlin/jvm/internal/C;
+
+    .line 4
+    .line 5
+    iput-object p4, p0, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/d0;->d:Lkotlin/jvm/internal/C;
+
+    .line 6
+    .line 7
+    const/4 p1, 0x2
+
+    .line 8
+    invoke-direct {p0, p1, p2}, LX6/i;-><init>(ILV6/e;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;LV6/e;)LV6/e;
+    .locals 4
+    .param p1    # Ljava/lang/Object;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .param p2    # LV6/e;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "LV6/e<",
+            "*>;)",
+            "LV6/e<",
+            "LQ6/z;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    new-instance v0, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/d0;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/d0;->c:Lkotlin/jvm/internal/C;
+
+    .line 4
+    .line 5
+    iget-object v2, p0, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/d0;->d:Lkotlin/jvm/internal/C;
+
+    .line 6
+    .line 7
+    iget-object v3, p0, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/d0;->b:Lorg/xmlpull/v1/XmlPullParser;
+
+    .line 8
+    .line 9
+    invoke-direct {v0, v3, p2, v1, v2}, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/d0;-><init>(Lorg/xmlpull/v1/XmlPullParser;LV6/e;Lkotlin/jvm/internal/C;Lkotlin/jvm/internal/C;)V
+
+    .line 10
+    .line 11
+    .line 12
+    iput-object p1, v0, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/d0;->a:Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    return-object v0
+.end method
+
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Ln7/H;
+
+    .line 2
+    .line 3
+    check-cast p2, LV6/e;
+
+    .line 4
+    .line 5
+    invoke-virtual {p0, p1, p2}, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/d0;->create(Ljava/lang/Object;LV6/e;)LV6/e;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    check-cast p1, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/d0;
+
+    .line 10
+    .line 11
+    sget-object p2, LQ6/z;->a:LQ6/z;
+
+    .line 12
+    .line 13
+    invoke-virtual {p1, p2}, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/d0;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p1
+
+    .line 17
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
+    .param p1    # Ljava/lang/Object;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    sget-object v0, LW6/a;->COROUTINE_SUSPENDED:LW6/a;
+
+    .line 2
+    .line 3
+    invoke-static {p1}, LQ6/m;->b(Ljava/lang/Object;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object p1, p0, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/d0;->a:Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    check-cast p1, Ln7/H;
+
+    .line 9
+    .line 10
+    invoke-static {p1}, Ln7/I;->e(Ln7/H;)V
+
+    .line 11
+    .line 12
+    .line 13
+    iget-object p1, p0, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/d0;->b:Lorg/xmlpull/v1/XmlPullParser;
+
+    .line 14
+    .line 15
+    invoke-static {p1}, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/K;->i(Lorg/xmlpull/v1/XmlPullParser;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    if-eqz v0, :cond_0
+
+    .line 20
+    .line 21
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->nextTag()I
+
+    .line 22
+    .line 23
+    .line 24
+    :cond_0
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getEventType()I
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v0
+
+    .line 28
+    const/4 v1, 0x1
+
+    .line 29
+    if-ne v0, v1, :cond_1
+
+    .line 30
+    .line 31
+    sget-object p1, LQ6/z;->a:LQ6/z;
+
+    .line 32
+    .line 33
+    return-object p1
+
+    .line 34
+    :cond_1
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getEventType()I
+
+    .line 35
+    .line 36
+    .line 37
+    move-result v0
+
+    .line 38
+    const/4 v2, 0x2
+
+    .line 39
+    if-ne v0, v2, :cond_b
+
+    .line 40
+    .line 41
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getDepth()I
+
+    .line 42
+    .line 43
+    .line 44
+    move-result v0
+
+    .line 45
+    :goto_0
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getDepth()I
+
+    .line 46
+    .line 47
+    .line 48
+    move-result v3
+
+    .line 49
+    if-lt v3, v0, :cond_a
+
+    .line 50
+    .line 51
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getDepth()I
+
+    .line 52
+    .line 53
+    .line 54
+    move-result v3
+
+    .line 55
+    sub-int/2addr v3, v0
+
+    .line 56
+    if-eqz v3, :cond_3
+
+    .line 57
+    .line 58
+    if-eq v3, v1, :cond_2
+
+    .line 59
+    .line 60
+    goto :goto_3
+
+    .line 61
+    :cond_2
+    invoke-static {p1}, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/K;->l(Lorg/xmlpull/v1/XmlPullParser;)Z
+
+    .line 62
+    .line 63
+    .line 64
+    goto :goto_3
+
+    .line 65
+    :cond_3
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getEventType()I
+
+    .line 66
+    .line 67
+    .line 68
+    move-result v3
+
+    .line 69
+    if-ne v3, v2, :cond_6
+
+    .line 70
+    .line 71
+    const-string v3, "creativeType"
+
+    .line 72
+    .line 73
+    invoke-static {p1, v3}, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/K;->f(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 74
+    .line 75
+    .line 76
+    move-result-object v3
+
+    .line 77
+    const/4 v4, 0x0
+
+    .line 78
+    if-eqz v3, :cond_5
+
+    .line 79
+    .line 80
+    const-string v5, "image/"
+
+    .line 81
+    .line 82
+    invoke-static {v3, v5, v1}, Ll7/l;->n(Ljava/lang/String;Ljava/lang/String;Z)Z
+
+    .line 83
+    .line 84
+    .line 85
+    move-result v5
+
+    .line 86
+    if-eqz v5, :cond_4
+
+    .line 87
+    .line 88
+    sget-object v4, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/model/k;->a:Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/model/k;
+
+    .line 89
+    .line 90
+    goto :goto_1
+
+    .line 91
+    :cond_4
+    const-string v5, "javascript"
+
+    .line 92
+    .line 93
+    invoke-static {v3, v5, v1}, Ll7/p;->o(Ljava/lang/CharSequence;Ljava/lang/String;Z)Z
+
+    .line 94
+    .line 95
+    .line 96
+    move-result v3
+
+    .line 97
+    if-eqz v3, :cond_5
+
+    .line 98
+    .line 99
+    sget-object v4, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/model/k;->b:Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/model/k;
+
+    .line 100
+    .line 101
+    :cond_5
+    :goto_1
+    iget-object v3, p0, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/d0;->c:Lkotlin/jvm/internal/C;
+
+    .line 102
+    .line 103
+    iput-object v4, v3, Lkotlin/jvm/internal/C;->a:Ljava/lang/Object;
+
+    .line 104
+    .line 105
+    goto :goto_3
+
+    .line 106
+    :cond_6
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getEventType()I
+
+    .line 107
+    .line 108
+    .line 109
+    move-result v3
+
+    .line 110
+    const/4 v4, 0x4
+
+    .line 111
+    if-ne v3, v4, :cond_8
+
+    .line 112
+    .line 113
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
+
+    .line 114
+    .line 115
+    .line 116
+    move-result-object v3
+
+    .line 117
+    if-eqz v3, :cond_8
+
+    .line 118
+    .line 119
+    invoke-static {v3}, Ll7/p;->x(Ljava/lang/CharSequence;)Z
+
+    .line 120
+    .line 121
+    .line 122
+    move-result v3
+
+    .line 123
+    if-eqz v3, :cond_7
+
+    .line 124
+    .line 125
+    goto :goto_2
+
+    .line 126
+    :cond_7
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
+
+    .line 127
+    .line 128
+    .line 129
+    move-result-object v3
+
+    .line 130
+    const-string v4, "text"
+
+    .line 131
+    .line 132
+    invoke-static {v3, v4}, Lkotlin/jvm/internal/m;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 133
+    .line 134
+    .line 135
+    invoke-static {v3}, Ll7/p;->M(Ljava/lang/String;)Ljava/lang/CharSequence;
+
+    .line 136
+    .line 137
+    .line 138
+    move-result-object v3
+
+    .line 139
+    invoke-virtual {v3}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 140
+    .line 141
+    .line 142
+    move-result-object v3
+
+    .line 143
+    iget-object v4, p0, Lcom/moloco/sdk/xenoss/sdkdevkit/android/adrenderer/internal/vast/d0;->d:Lkotlin/jvm/internal/C;
+
+    .line 144
+    .line 145
+    iput-object v3, v4, Lkotlin/jvm/internal/C;->a:Ljava/lang/Object;
+
+    .line 146
+    .line 147
+    goto :goto_3
+
+    .line 148
+    :cond_8
+    :goto_2
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getEventType()I
+
+    .line 149
+    .line 150
+    .line 151
+    move-result v3
+
+    .line 152
+    const/4 v4, 0x3
+
+    .line 153
+    if-ne v3, v4, :cond_9
+
+    .line 154
+    .line 155
+    sget-object p1, LQ6/z;->a:LQ6/z;
+
+    .line 156
+    .line 157
+    return-object p1
+
+    .line 158
+    :cond_9
+    :goto_3
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
+
+    .line 159
+    .line 160
+    .line 161
+    goto :goto_0
+
+    .line 162
+    :cond_a
+    sget-object p1, LQ6/z;->a:LQ6/z;
+
+    .line 163
+    .line 164
+    return-object p1
+
+    .line 165
+    :cond_b
+    new-instance p1, Lorg/xmlpull/v1/XmlPullParserException;
+
+    .line 166
+    .line 167
+    const-string v0, "iterateCurrentTagEvents call is allowed only for START_TAG event"
+
+    .line 168
+    .line 169
+    invoke-direct {p1, v0}, Lorg/xmlpull/v1/XmlPullParserException;-><init>(Ljava/lang/String;)V
+
+    .line 170
+    .line 171
+    .line 172
+    throw p1
+.end method

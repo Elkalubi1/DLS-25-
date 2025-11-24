@@ -1,0 +1,86 @@
+.class public final Lcom/moloco/sdk/internal/ortb/model/k;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/moloco/sdk/internal/ortb/model/k$a;,
+        Lcom/moloco/sdk/internal/ortb/model/k$b;
+    }
+.end annotation
+
+.annotation runtime Ly7/e;
+.end annotation
+
+
+# static fields
+.field public static final Companion:Lcom/moloco/sdk/internal/ortb/model/k$b;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# instance fields
+.field public final a:LQ6/s;
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/moloco/sdk/internal/ortb/model/k$b;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lcom/moloco/sdk/internal/ortb/model/k$b;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lcom/moloco/sdk/internal/ortb/model/k;->Companion:Lcom/moloco/sdk/internal/ortb/model/k$b;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public constructor <init>(ILQ6/s;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    and-int/lit8 p1, p1, 0x1
+
+    .line 5
+    .line 6
+    if-nez p1, :cond_0
+
+    .line 7
+    .line 8
+    const/4 p1, 0x0
+
+    .line 9
+    iput-object p1, p0, Lcom/moloco/sdk/internal/ortb/model/k;->a:LQ6/s;
+
+    .line 10
+    .line 11
+    return-void
+
+    .line 12
+    :cond_0
+    iput-object p2, p0, Lcom/moloco/sdk/internal/ortb/model/k;->a:LQ6/s;
+
+    .line 13
+    .line 14
+    return-void
+.end method

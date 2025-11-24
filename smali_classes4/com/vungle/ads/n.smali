@@ -1,0 +1,15 @@
+.class public interface abstract Lcom/vungle/ads/n;
+.super Ljava/lang/Object;
+.source "InitializationListener.kt"
+
+
+# virtual methods
+.method public abstract onError(Lcom/vungle/ads/VungleError;)V
+    .param p1    # Lcom/vungle/ads/VungleError;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract onSuccess()V
+.end method

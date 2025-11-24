@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="DLS Safe Mode" />
+    <TextView android:id="@id/txtSafeDevice" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Device ID:" />
+    <TextView android:id="@id/txtSafeUser" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="User ID:" />
+    <TextView android:id="@id/txtSafeGAID" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="GA ID:" />
+    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip">
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Delete Cache" android:onClick="DeleteCacheQuestion" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Reset Graphics Options" android:onClick="ResetGfxOptQuestion" />
+    </TableRow>
+    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip">
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Exit safe mode" android:onClick="ExitSafeMode" />
+    </TableRow>
+    <TextView android:id="@id/textResult" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+</TableLayout>

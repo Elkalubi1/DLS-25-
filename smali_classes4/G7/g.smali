@@ -1,0 +1,343 @@
+.class public final LG7/g;
+.super Ljava/lang/Object;
+.source "CertificatePinner.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        LG7/g$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static final c:LG7/g;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# instance fields
+.field public final a:Ljava/util/Set;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set<",
+            "LG7/g$a;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field public final b:LS7/c;
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v1, LG7/g;
+
+    .line 7
+    .line 8
+    invoke-static {v0}, LR6/x;->M(Ljava/lang/Iterable;)Ljava/util/Set;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    const/4 v2, 0x0
+
+    .line 13
+    invoke-direct {v1, v0, v2}, LG7/g;-><init>(Ljava/util/Set;LS7/c;)V
+
+    .line 14
+    .line 15
+    .line 16
+    sput-object v1, LG7/g;->c:LG7/g;
+
+    .line 17
+    .line 18
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/Set;LS7/c;)V
+    .locals 0
+    .param p1    # Ljava/util/Set;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # LS7/c;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Set<",
+            "LG7/g$a;",
+            ">;",
+            "LS7/c;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LG7/g;->a:Ljava/util/Set;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, LG7/g;->b:LS7/c;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/String;Le7/a;)V
+    .locals 1
+    .param p1    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Le7/a;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Le7/a<",
+            "+",
+            "Ljava/util/List<",
+            "+",
+            "Ljava/security/cert/X509Certificate;",
+            ">;>;)V"
+        }
+    .end annotation
+
+    .line 1
+    const-string p2, "hostname"
+
+    .line 2
+    .line 3
+    invoke-static {p1, p2}, Lkotlin/jvm/internal/m;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object p1, p0, LG7/g;->a:Ljava/util/Set;
+
+    .line 7
+    .line 8
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 13
+    .line 14
+    .line 15
+    move-result p2
+
+    .line 16
+    if-nez p2, :cond_0
+
+    .line 17
+    .line 18
+    return-void
+
+    .line 19
+    :cond_0
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p1
+
+    .line 23
+    check-cast p1, LG7/g$a;
+
+    .line 24
+    .line 25
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 26
+    .line 27
+    .line 28
+    const/4 p1, 0x0
+
+    .line 29
+    const/4 p2, 0x0
+
+    .line 30
+    const-string v0, "**."
+
+    .line 31
+    .line 32
+    invoke-static {p2, v0, p1}, Ll7/l;->n(Ljava/lang/String;Ljava/lang/String;Z)Z
+
+    .line 33
+    .line 34
+    .line 35
+    throw p2
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    instance-of v0, p1, LG7/g;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    check-cast p1, LG7/g;
+
+    .line 6
+    .line 7
+    iget-object v0, p1, LG7/g;->a:Ljava/util/Set;
+
+    .line 8
+    .line 9
+    iget-object v1, p0, LG7/g;->a:Ljava/util/Set;
+
+    .line 10
+    .line 11
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/m;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    if-eqz v0, :cond_0
+
+    .line 16
+    .line 17
+    iget-object p1, p1, LG7/g;->b:LS7/c;
+
+    .line 18
+    .line 19
+    iget-object v0, p0, LG7/g;->b:LS7/c;
+
+    .line 20
+    .line 21
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/m;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 22
+    .line 23
+    .line 24
+    move-result p1
+
+    .line 25
+    if-eqz p1, :cond_0
+
+    .line 26
+    .line 27
+    const/4 p1, 0x1
+
+    .line 28
+    return p1
+
+    .line 29
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 30
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, LG7/g;->a:Ljava/util/Set;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    add-int/lit16 v0, v0, 0x5ed
+
+    .line 8
+    .line 9
+    mul-int/lit8 v0, v0, 0x29
+
+    .line 10
+    .line 11
+    iget-object v1, p0, LG7/g;->b:LS7/c;
+
+    .line 12
+    .line 13
+    if-eqz v1, :cond_0
+
+    .line 14
+    .line 15
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v1
+
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 21
+    :goto_0
+    add-int/2addr v0, v1
+
+    .line 22
+    return v0
+.end method
